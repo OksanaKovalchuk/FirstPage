@@ -17,10 +17,7 @@ Route::get('/', function () {
 Route::get('test', 'MainController@index');
 
 
-Route::get('hello', 'KsiuController@index')->name('name.hello');
-Route::get('sides', 'SideController@sides')->name('name.sides');
-Route::get('new', 'NewController@second')->name('name.new');
-Route::get('footer', 'FooterController@down')->name('name.footer');
+
 Route::get('main','MainController@index')->name('name.main');
 Route::get('stories','MainController@stories')->name('name.stories');
 Route::get('painters','MainController@painters')->name('name.painters');
