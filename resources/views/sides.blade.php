@@ -7,7 +7,7 @@
 
 <div class="sidebar">
     <div class="sidebar_item">
-        <h3>Червенm 2016</h3>
+        <h3>Червень 2016</h3>
 
     </div><!--close sidebar_item-->
 </div><!--close sidebar-->

@@ -14,9 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('test', 'MainController@index');
-
-
 
 Route::get('main','MainController@index')->name('name.main');
 Route::get('stories','MainController@stories')->name('name.stories');

@@ -1,5 +1,6 @@
 @extends("layouts.master")
-@include('content')
+
+@section('content')
 
 
     <div class="content_item">
