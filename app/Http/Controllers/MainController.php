@@ -11,18 +11,18 @@ class MainController extends Controller
     //
     public function index()
     {
-        return view('firstSite.ksiu');
+        return view('pages.ksiu');
     }
     public function stories()
     {
-        return view('firstSite.stories');
+        return view('pages.stories');
     }
     public function painters()
     {
-        return view('firstSite.painters');
+        return view('pages.painters');
     }
     public function contact()
     {
-        return view('firstSite.contact');
+        return view('pages.contact');
     }
 }

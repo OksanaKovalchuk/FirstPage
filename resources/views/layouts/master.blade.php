@@ -8,6 +8,7 @@
     <meta name="keywords" content="website keywords, website keywords" />
     <meta http-equiv="content-type" content="text/html" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
+    <!-- modernizr enables HTML5 elements and feature detects -->
     <script type="text/javascript" src="{{ asset('js/modernizr-1.5.min.js') }}"></script>
 </head>
 
@@ -24,15 +25,25 @@
     <nav>
         <div id="menubar">
             <ul id="nav">
-                <li><a href="{{ route('name.main') }}">Головна</a></li>
+                {{--<li class="current"><a href="{{'name.main'}}">Головна</a></li>--}}
+                <li><a href="{{ route('name.main') }}">головна</a></li>
                 <li><a href="{{ route('name.stories') }}">Історії</a></li>
                 <li><a href="{{ route('name.painters')}}">Про художників</a></li>
                 <li><a href="{{ route('name.contact')}}">Зворотній зв'язок</a></li>
             </ul>
         </div><!--close menubar-->
     </nav>
+
+    {{--<div class="slideshow">--}}
+        {{--<ul class="slideshow">--}}
+            {{--<li class="show"><img width="940" height="300" src="images/home_1.gif"  /></li>--}}
+            {{--<li><img width="940" height="300" src="images/home_2.jpg"  /></li>--}}
+        {{--</ul>--}}
+    {{--</div><!--close slideshow-->--}}
+
     <div id="site_content">
         @yield("content")
+
     </div>
     </div>
 
