@@ -26,3 +26,5 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 Route::get('someform',
     ['as' => 'someform', 'uses' => 'MainController@create']);
+Route::post('someform',
+    ['as' => 'someform', 'uses' => 'MainController@store']);

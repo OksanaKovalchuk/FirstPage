@@ -17,10 +17,13 @@ body
 }
 
 /* tell the browser to render HTML 5 elements as block */
-article, aside, figure, footer, header, hgroup, nav, section { 
+article, aside, figure, footer, header, hgroup, nav, section {
   display:block;
 }
-
+.form-group
+{
+  display:block;
+}
 p
 { padding: 0 0 10px 0;
   color: #FFF;
