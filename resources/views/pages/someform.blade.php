@@ -7,14 +7,6 @@
 
 <h1>Contact Me</h1>
 
-
-@if(isset($request))
-    {
-    <h3>Your name:</h3>{{$request->name}}
-    <h3>Your email:</h3>{{ $request->email }}
-    <h3>Message:</h3>{{$request->message}}
-    }
-@else
     {!! Form::open(array('route' => 'someform', 'class' => 'form')) !!}
 
     <div class="form-group">
@@ -46,5 +38,3 @@
           array('class'=>'btn btn-primary')) !!}
     </div>
     {!! Form::close() !!}
-@endif
-

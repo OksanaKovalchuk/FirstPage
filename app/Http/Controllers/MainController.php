@@ -49,10 +49,6 @@ class MainController extends Controller
     }
     public function store(ContactFormRequest $request)
     {
-
-//     return \Redirect::route('someform')->with('message', 'Thanks for contacting us!');
-//    echo "sound";
-//     return view('pages.someform');
        return
            ' <h3>Your name is :</h3> '.($request->name).'<h3>Your email :</h3>'.($request->email).'<h3>Message :</h3>'.($request->message);
     }

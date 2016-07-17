@@ -29,5 +29,4 @@ class ContactFormRequest extends Request
             'message' => 'required',
         ];
     }
-    
 }

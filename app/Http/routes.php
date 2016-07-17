@@ -21,8 +21,6 @@ Route::get('painters','MainController@painters')->name('name.painters');
 Route::get('contact','MainController@contact')->name('name.contact');
 //Route::get('someform','MainController@someform')->name('name.someform');
 Route::auth();
-//Route::get('create','PostController@create')->name('name.create');
-//Route::post('post','PostController@post')->name('name.post');
 Route::get('/home', 'HomeController@index');
 Route::get('someform',
     ['as' => 'someform', 'uses' => 'MainController@create']);
