@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use DCN\RBAC\Traits\HasRoleAndPermission;
+use DCN\RBAC\Contracts\HasRoleAndPermission as HasRoleAndPermissionContract;
 
 /**
  * App\User
@@ -25,11 +27,14 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  */
 class User extends Authenticatable
 {
+    use Rbac;
+    
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
+    
     protected $fillable = [
         'name', 'email', 'password',
     ];

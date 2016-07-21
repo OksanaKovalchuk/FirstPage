@@ -13,7 +13,7 @@ html
 
 body
 { font: normal 80% Arial, Helvetica, sans-serif;
-  color: #000;
+  color: #faebd7;
 }
 
 /* tell the browser to render HTML 5 elements as block */
@@ -24,21 +24,23 @@ article, aside, figure, footer, header, hgroup, nav, section {
 {
   display:block;
 }
-p
-{ padding: 0 0 10px 0;
-  color: #FFF;
+p,td,tr,th
+{ padding: 0 0 10px 20px;
+  color: #E5E5DB;
   line-height: 1.7em;
   font-size: 100% }
 
 img
 { border: 0;}
 
-h1, h2, h3, h4, h5, h6 
+h1, h2, h3, h4, h5, h6
 { font: bold 175% 'News Cycle', Arial, sans-serif;
-  color: #fff;
+  color: #faebd7;
   text-shadow: 1px 1px #000;
   letter-spacing: -1px;
-  margin: 0 0 10px 0;}
+  margin: 0 0 10px 0;
+  padding: 0 0 0 30px;
+}
 
 h2
 { font: bold 165% 'News Cycle', Arial, sans-serif;}
@@ -48,14 +50,14 @@ h3
 
 h4, h5, h6
 { margin: 0;
-  padding: 0 0 0px 0;
+  padding: 0 0 0 40px;
   font: normal 150% 'News Cycle', Arial, sans-serif;
-  color: #FFF;
+  color: #cdddeb;
   line-height: 1.5em;}
 
 h5, h6
 { font: normal 95% 'News Cycle', Arial, sans-serif;
-  color: #888;
+  color: #9783b9;
   padding-bottom: 15px;}
   
 span
@@ -84,7 +86,7 @@ ol li
 { margin: 0 0 11px 0;}
 
 #main, header, #banner, #menubar, #site_content, footer, #content_grey, nav
-{ margin-left: auto; 
+{ margin-left: auto;
   margin-right: auto;}
 
 #main
@@ -232,16 +234,16 @@ footer
   font-weight: bold;
   text-align: center; 
   text-shadow: 1px 1px #000;
-  color: #FFF;}
+  color: #9783b9;}
 
 footer a
-{ color: #FFF;
+{ color: #9783b9;
   text-decoration: none;
   padding-bottom: 20px;}
 
 footer a:hover
 { text-decoration: underline;
-  color: #FFF;}
+  color: #9783b9;}
 
  .readmore a
 { color: #FFF;

@@ -10,7 +10,11 @@
         "barryvdh/laravel-ide-helper": "^2.2",
         "laravelcollective/html": "5.2.*",
         "doctrine/dbal": "^2.5",
-        "twbs/bootstrap": "^3.3"
+        "twbs/bootstrap": "^3.3",
+        "dcn/rbac": "~1.1.0",
+        "askedio/laravel5-rbac": "dev-master",
+        "phpzen/laravel-rbac": "^0.2.0"
+
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

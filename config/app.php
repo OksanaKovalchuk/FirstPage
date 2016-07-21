@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ua',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'ua',
 
     /*
     |--------------------------------------------------------------------------
@@ -155,7 +155,12 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        /**
+         * Third Party Service Providers...
+         */
+        DCN\RBAC\RBACServiceProvider::class,
+        Askedio\Laravel5RBAC\Providers\GenericServiceProvider::class,
+        PHPZen\LaravelRbac\RbacServiceProvider::class,
     ],
 
     /*

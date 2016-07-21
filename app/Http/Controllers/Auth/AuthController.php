@@ -53,6 +53,17 @@ class AuthController extends Controller
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
         ]);
+        $adminRole = new Role;
+        $adminRole->name = 'Administrator';
+        $adminRole->slug = 'administrator';
+        $adminRole->description = 'System Administrator';
+        $adminRole->save();
+
+        $editorRole = new Role;
+        $editorRole->name = 'Editor';
+        $editorRole->slug = 'editor';
+        $editorRole->description = 'Editor';
+        $editorRole->save();
     }
 
     /**
