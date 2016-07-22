@@ -45,14 +45,12 @@ class PostController extends Controller
         //validate the data
         $this->validate($request,array(
             'title' => 'required',
-            'reference' =>'required',
             'message' => 'required'
         ));
 
         //store in database
         $post=new Post;
         $post->title = $request->title;
-        $post->reference = $request->reference;
         $post->message = $request->message;
 
         $post->save();
@@ -61,12 +59,22 @@ class PostController extends Controller
 
     }
 
+
     /**
      * @return mixed
      */
     public function create(){
         return view('story.create');
     }
+
+    /**
+     * @return mixed
+     */
+    public function createpicture()
+    {
+        return view('pages.create');
+    }
+
 
     /**
      * @param $id

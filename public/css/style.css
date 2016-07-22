@@ -1,8 +1,8 @@
-@font-face { 
-  font-family: News Cycle; 
-    src: url('../fonts/NewsCycle-Regular.eot'); 
-    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
-} 
+/*@font-face { */
+  /*font-family: News Cycle; */
+    /*src: url('../fonts/NewsCycle-Regular.eot'); */
+    /*src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); */
+/*} */
 
 html
 { height: 100%;}
@@ -14,6 +14,7 @@ html
 body
 { font: normal 80% Arial, Helvetica, sans-serif;
   color: #faebd7;
+  height:100%;
 }
 
 /* tell the browser to render HTML 5 elements as block */
@@ -31,12 +32,14 @@ p,td,tr,th
   font-size: 100% }
 
 img
-{ border: 0;}
+{ border: 0;
+height: 300px;
+width:200px;}
 
 h1, h2, h3, h4, h5, h6
 { font: bold 175% 'News Cycle', Arial, sans-serif;
   color: #faebd7;
-  text-shadow: 1px 1px #000;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.15);
   letter-spacing: -1px;
   margin: 0 0 10px 0;
   padding: 0 0 0 30px;
@@ -90,7 +93,9 @@ ol li
   margin-right: auto;}
 
 #main
-{ background: #1D1D1D url(../images/pattern.png) repeat;}
+{ background: #1D1D1D url(../images/pattern.png) repeat;
+height: auto;
+}
   
 header
 { background: #1D1D1D url(../images/pattern.png) repeat;
@@ -135,7 +140,7 @@ nav
 { font: normal 500% 'News Cycle', Arial, sans-serif;
   letter-spacing: -2px;
   text-shadow: 1px 1px #000;
-  color: #FFF;}
+  color: #272727;}
   
 ul#nav
 { margin:0;}
@@ -159,7 +164,7 @@ ul#nav li a
   -moz-border-radius: 7px 7px 7px 7px;
   -webkit-border: 7px 7px 7px 7px;
   text-align: center;
-  color: #FFF;
+  color: #1a1a1a;
   text-decoration: none;} 
   
 ul#nav li.current a, ul#nav li:hover a
@@ -198,7 +203,7 @@ ul#nav li.current a, ul#nav li:hover a
   color: #43A9FF;}
 
 .sidebar h3
-{ color: #FFF;}  
+{ color: #0c0c0c;}
 
 #content
 { width: 680px;
@@ -232,7 +237,7 @@ footer
 { height: 50px;
   padding-bottom: 30px;
   font-weight: bold;
-  text-align: center; 
+  text-align: center;
   text-shadow: 1px 1px #000;
   color: #9783b9;}
 
@@ -320,11 +325,11 @@ footer a:hover
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
   color: #FFF;}
 
-.slideshow
-{ width: 940px;
-  height: 300px;
-  float: left;}  
-  
+/*.slideshow*/
+/*{ width: 940px;*/
+  /*height: 300px;*/
+  /*float: left;}  */
+  /**/
 /* styling for the slideshow on the homepage */
 ul.slideshow {
   list-style: none;

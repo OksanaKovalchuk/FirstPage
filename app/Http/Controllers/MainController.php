@@ -34,10 +34,11 @@ class MainController extends Controller
     public function stories()
     {
         $pictures = $this->pictureRepo->getAll();
+        $painters = $this->painterRepo->getAll();
 //        $painter = Painter::find($id)
         return view('pages.stories',[
             'pictures' => $pictures,
-//            'painter' => $painter;
+          'painters' => $painters
         ]);
     }
 
@@ -63,6 +64,7 @@ class MainController extends Controller
     {
         return view('pages.contactform');
     }
+    
 
     /**
      * @param ContactFormRequest $request

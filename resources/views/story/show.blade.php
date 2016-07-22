@@ -4,7 +4,7 @@
 @section('content')
     <div class="row">
             <div class="col-md-7">
-            <h1>{{$post->title}}</h1>
+            <h1><font color="#f0f8ff">{{$post->title}}</font></h1>
                 <p class="lead"> {{$post->message}}</p>
             </div>
         <div class="col-md-5">
@@ -28,8 +28,6 @@
                     </div>
                     <div class="col-sm-6">
                         {!! Form::open(['route' => ['story.destroy',$post->id], 'method' => 'DELETE']) !!}
-                        {{--{!! Html::linkRoute('story.destroy','Delete', array($post->id), array('class'=>--}}
-                       {{--'btn btn-danger btn-block')) !!}--}}
                         {!! Form::submit('Delete',['class' =>'btn btn-danger btn-block']) !!}
                         {!! Form::close() !!}
                     </div>

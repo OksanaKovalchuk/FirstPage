@@ -18,7 +18,7 @@
     <header>
         <div id="banner">
             <div id="welcome">
-                <h2>Артнепінг</h2>
+                <h2><font color="#f5f5dc">Артнепінг</font></h2>
             </div><!--close welcome-->
         </div><!--close banner-->
     </header>

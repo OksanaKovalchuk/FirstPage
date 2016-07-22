@@ -16,7 +16,8 @@
         </div>
 
         <div class="col-md-2">
-            <a href="{{route('stories')}}" class="btn btn-block btn-primary">Додати історію</a>
+            <a href="{{route('story.create')}}" class="btn btn-block btn-primary">Додати історію</a>
+            <a href="{{route('stories')}}" class="btn btn-block btn-primary">Cортувати</a>
         </div>
         <hr>
     </div>
@@ -26,8 +27,8 @@
             <li class="list-group-item">"{{$picture->name}}"</li>
             {{--<li class="list-group-item">{{$painter->painter_name}}</li>--}}
             <li class="list-group-item">{{$picture->napping_story}}</li>
-            {{--<li><a href="{{route('stories',$picture->picture_id)}}" class="btn btn-default btn-sm">View</a> <a href="{{route('stories.edit',$post->id)}}" class="btn btn-default btn-sm">Edit</a></li>--}}
             @foreach($picture->getAttribute('painter') as $painter)
+                <li><a href="{{route('stories',$picture->id)}}" class="btn btn-default btn-sm">View</a> <a href="{{route('stories',$picture->id)}}" class="btn btn-default btn-sm">Edit</a></li>
                 <h1><font color="#faebd7">{{ $painter->painter_name }}</font></h1>
             @endforeach
             @endforeach

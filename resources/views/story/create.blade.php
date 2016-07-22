@@ -11,8 +11,6 @@
             {!! Form::open(array('route'=>'story.store')) !!}
            <p> {{ Form::label('title','Title:')}}</p>
             {{Form::text('title',null,array('class'=>'form-control'))}}
-            <p>{{ Form::label('reference','Reference to image:')}}</p>
-            {{Form::text('reference',null,array('class'=>'form-control'))}}
            <p> {{Form::label('message',"Messagebody")}}</p>
             {{Form::textarea('message',null,array('class'=>'form-control'))}}
             {{Form::submit('Create new Message',array('class'=>'btn btn-success btn-lg btn-block','style'=>'margin-top:20px;'))}}

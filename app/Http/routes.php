@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::get('main','MainController@index')->name('name.main');
 Route::get('stories','MainController@stories')->name('stories');
+
 Route::get('pictures','MainController@getPictures')->name('pictures');
 Route::get('painters','MainController@painters')->name('name.painters');
 Route::auth();
