@@ -3,10 +3,12 @@
 
 @section('content')
     <div class="row">
-            <div class="col-md-7">
-            <h1>{{$post->title}}</h1>
-                <p class="lead"> {{$post->message}}</p>
-            </div>
+        <div class="col-md-7">
+            <h1>{{$picture->name}}</h1>
+            {   {--image--}}
+
+            <p class="lead"> {{$post->message}}</p>
+        </div>
         <div class="col-md-5">
             <div class="well">
 
@@ -29,7 +31,7 @@
                     <div class="col-sm-6">
                         {!! Form::open(['route' => ['story.destroy',$post->id], 'method' => 'DELETE']) !!}
                         {{--{!! Html::linkRoute('story.destroy','Delete', array($post->id), array('class'=>--}}
-                       {{--'btn btn-danger btn-block')) !!}--}}
+                        {{--'btn btn-danger btn-block')) !!}--}}
                         {!! Form::submit('Delete',['class' =>'btn btn-danger btn-block']) !!}
                         {!! Form::close() !!}
                     </div>

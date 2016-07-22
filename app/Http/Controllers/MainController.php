@@ -3,13 +3,24 @@
 namespace App\Http\Controllers;
 
 
+use App\Entities\Painter;
 use App\Http\Requests\ContactFormRequest;
 use App\Http\Requests;
+use App\Repositories\PainterReposiory;
+use App\Repositories\PictureRepository;
 use App\Services\EmailService;
 use Illuminate\Support\Facades\Mail;
 
 class MainController extends Controller
 {
+    private $pictureRepo;
+    private $painterRepo;
+
+    public function __construct(PainterReposiory $painterRepo,PictureRepository $pictureRepo){
+        
+        $this->pictureRepo = $pictureRepo;
+        $this->painterRepo = $painterRepo;
+    }
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
@@ -22,7 +33,20 @@ class MainController extends Controller
      */
     public function stories()
     {
-        return view('pages.stories');
+        $pictures = $this->pictureRepo->getAll();
+//        $painter = Painter::find($id)
+        return view('pages.stories',[
+            'pictures' => $pictures,
+//            'painter' => $painter;
+        ]);
+    }
+
+    public function getPictures()
+    {
+        $pictures = $this->pictureRepo->getAll();
+        foreach ($pictures as $picture){
+           return view('pages.stories');
+        }
     }
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View

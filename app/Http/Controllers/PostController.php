@@ -7,12 +7,12 @@ use App\Repositories\PostRepository;
 use Illuminate\Http\Request;
 use App\Posts;
 use App\Http\Requests;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
 
     private $postRepo;
-
     /**
      * @return mixed
      */
@@ -40,16 +40,19 @@ class PostController extends Controller
      * @param Request $request
      * @return mixed
      */
+    //, ImageUpload $imageUpload
     public function store(Request $request){
         //validate the data
         $this->validate($request,array(
             'title' => 'required',
+            'reference' =>'required',
             'message' => 'required'
         ));
 
         //store in database
         $post=new Post;
         $post->title = $request->title;
+        $post->reference = $request->reference;
         $post->message = $request->message;
 
         $post->save();
@@ -102,8 +105,12 @@ class PostController extends Controller
      * @return mixed
      */
     public function edit($id){
-        $post = Post::find($id);
-        return view('story.edit')->withPost($post);
+        if (Auth::check() && Auth::user()->admin) {
+            $post = Post::find($id);
+            return view('story.edit')->withPost($post);
+        }
+        return back();
+
     }
 
     /**
@@ -111,9 +118,13 @@ class PostController extends Controller
      * @return mixed
      */
     public function destroy($id){
-        
-        $post=Post::find($id);
-        $post->delete();
-        return redirect()->route('story.index');
+        if (Auth::check() && Auth::user()->admin) {
+            $post=Post::find($id);
+            $post->delete();
+            return redirect()->route('story.index');
+        }
+        return back();
+
+
     }
 }

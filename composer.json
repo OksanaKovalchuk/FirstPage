@@ -13,7 +13,8 @@
         "twbs/bootstrap": "^3.3",
         "dcn/rbac": "~1.1.0",
         "askedio/laravel5-rbac": "dev-master",
-        "phpzen/laravel-rbac": "^0.2.0"
+        "phpzen/laravel-rbac": "^0.2.0",
+        "prettus/l5-repository": "^2.6"
 
     },
     "require-dev": {

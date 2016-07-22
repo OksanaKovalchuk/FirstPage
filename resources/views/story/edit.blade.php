@@ -31,9 +31,6 @@
                <p> {!! Form::label('title', 'Title:') !!}</p>
                 {!! Form::text('title', null, ["class" =>'form-control input-lg']) !!}
 
-                <p> {!! Form::label('reference',"Reference to image:") !!}</p>
-                {!! Form::textarea('reference', null, ['class'=>'form-spacing-top']) !!}
-
                 <p> {!! Form::label('message',"Message:") !!}</p>
                 {!! Form::textarea('message', null, ['class'=>'form-spacing-top']) !!}
 
@@ -41,11 +38,6 @@
 
             <div class="col-md-4">
                 <div class="well">
-                    //image
-                    <dl class="dl-horizontal">
-                        <dt>Image:</dt>
-                        <dd>{{date('M j, Y h:ia', strtotime($post->created_at))}}</dd>
-                    </dl>
 
                     <dl class="dl-horizontal">
                         <dt>Date of creation:</dt>

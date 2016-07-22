@@ -12,28 +12,29 @@
         <hr>
 
     </div><!--end of row-->
-<div class="col-md-12">
-    <table class="table">
-        <thead>
+    <div class="col-md-12">
+        <table class="table">
+            <thead>
             <th>#</th>
             <th>Title</th>
+            <th>Image</th>
             <th> Body</th>
             <th>Created At</th>
             <th></th>
-        </thead>
+            </thead>
             <tbody>
             @foreach($posts as $post)
                 <tr>
                     <th>{{$post->id}}</th>
                     <td>{{$post->title}}</td>
+                    <td>image</td>
                     <td>{{substr($post->message,0,50)}}{{strlen($post->message)>50?"...":""}}</td>
                     <td>{{$post->created_at}}</td>
                     <td><a href="{{route('story.show',$post->id)}}" class="btn btn-default btn-sm">View</a> <a href="{{route('story.edit',$post->id)}}" class="btn btn-default btn-sm">Edit</a></td>
                 </tr>
 
-                @endforeach
+            @endforeach
             </tbody>
-
-    </table>
-    </div>
-    @stop
+            </font>
+        </table>
+@stop

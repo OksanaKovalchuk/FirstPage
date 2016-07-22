@@ -123,6 +123,7 @@ return [
 
     'providers' => [
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
         /*
          * Laravel Framework Service Providers...
          */
@@ -161,6 +162,21 @@ return [
         DCN\RBAC\RBACServiceProvider::class,
         Askedio\Laravel5RBAC\Providers\GenericServiceProvider::class,
         PHPZen\LaravelRbac\RbacServiceProvider::class,
+    ],
+    'generator'=>[
+        'basePath'=>app_path(),
+        'rootNamespace'=>'App\\',
+        'paths'=>[
+            'models'       => 'Entities',
+            'repositories' => 'Repositories',
+            'interfaces'   => 'Repositories',
+            'transformers' => 'Transformers',
+            'presenters'   => 'Presenters',
+            'validators'   => 'Validators',
+            'controllers'  => 'Http/Controllers',
+            'provider'     => 'RepositoryServiceProvider',
+            'criteria'     => 'Criteria',
+        ]
     ],
 
     /*
