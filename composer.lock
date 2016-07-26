@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "41557f8e1a7ffd4b0a5444e19d4ab62c",
+    "hash": "a82f0c60281a6fdf24f420798557aadf",
     "content-hash": "ca32e5a4506d9f083446c5939c5f176e",
     "packages": [
         {
@@ -1757,22 +1757,22 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "1.4.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "99f5574fc59b6d1e3951d0039199e94a6958207a"
+                "reference": "5b06b18f5e6dace43b54f4c6237751ce0ff1f95e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/99f5574fc59b6d1e3951d0039199e94a6958207a",
-                "reference": "99f5574fc59b6d1e3951d0039199e94a6958207a",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/5b06b18f5e6dace43b54f4c6237751ce0ff1f95e",
+                "reference": "5b06b18f5e6dace43b54f4c6237751ce0ff1f95e",
                 "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "^5.1",
                 "laravel/framework": "^5.1.11",
-                "php": ">=5.5.0"
+                "php": ">=5.6.0"
             },
             "require-dev": {
                 "orchestra/testbench": "^3.1.4",
@@ -1806,7 +1806,7 @@
                 "security",
                 "spatie"
             ],
-            "time": "2016-05-08 17:18:03"
+            "time": "2016-07-23 22:52:29"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2698,16 +2698,16 @@
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v3.3.6",
+            "version": "v3.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "81df608a40bf0629a1dc08e584849bb1e43e0b7a"
+                "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/81df608a40bf0629a1dc08e584849bb1e43e0b7a",
-                "reference": "81df608a40bf0629a1dc08e584849bb1e43e0b7a",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/0b9c4a4007c44201dce9a6cc1a38407005c26c86",
+                "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86",
                 "shasum": ""
             },
             "replace": {
@@ -2745,7 +2745,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2015-11-24 19:37:05"
+            "time": "2016-07-25 15:51:55"
         },
         {
             "name": "vlucas/phpdotenv",

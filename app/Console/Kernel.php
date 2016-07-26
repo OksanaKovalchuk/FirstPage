@@ -17,14 +17,15 @@ class Kernel extends ConsoleKernel
     ];
 
     /**
-     * Define the application's command schedule.
-     *
-     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
-     * @return void
+     * @param Schedule $schedule
      */
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')
         //          ->hourly();
+//        $schedule->command('emails:send --force')
+//                ->everyFiveMinutes()
+//                ->withoutOverlapping()//if the last hasn't stopped, new task won't begin
+//                ->emailOutputTo('kovalchuk.oksana2@gmail.com');//only for command - not supported for method "call"
     }
 }

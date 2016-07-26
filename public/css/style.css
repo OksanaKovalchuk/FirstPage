@@ -98,7 +98,7 @@ height: auto;
 }
   
 header
-{ background: #1D1D1D url(../images/pattern.png) repeat;
+{ background: #1D1D1D  url(../images/pattern.png) repeat;
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;}

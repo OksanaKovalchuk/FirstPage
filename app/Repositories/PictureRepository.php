@@ -40,4 +40,17 @@ class PictureRepository
         return $this->model->destroy($id);
 
     }
+    public function roles(){
+        $createUser = new Permission;
+        $createUser->name = 'Create user';
+        $createUser->slug = 'user.create';
+        $createUser->description = 'Permission to create user';
+        $createUser->save();
+
+        $updateUser = new Permission;
+        $updateUser->name = 'Update user';
+        $updateUser->slug = 'user.update';
+        $updateUser->description = 'Permission to update user';
+        $updateUser->save();
+    }
 }

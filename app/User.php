@@ -27,7 +27,7 @@ use DCN\RBAC\Contracts\HasRoleAndPermission as HasRoleAndPermissionContract;
  */
 class User extends Authenticatable
 {
-    use Rbac;
+
     
     /**
      * The attributes that are mass assignable.

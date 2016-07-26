@@ -13,13 +13,6 @@ class PostController extends Controller
 {
 
     private $postRepo;
-    /**
-     * @return mixed
-     */
-    public function  index(){
-        $posts =Post::all();
-        return view('story.index')->withPosts($posts);
-    }
 
     /**
      * PostController constructor.
@@ -27,6 +20,34 @@ class PostController extends Controller
      */
     public function __construct(PostRepository $postRepo){
         $this->postRepo = $postRepo;
+    }
+//    /**
+//     * @param Request $request
+//     * @return mixed
+//     */
+//    public function pictureStore(Request $request){
+//        $this->validate($request,array(
+//            'name' => 'required',
+//            'reference' => 'required'
+//        ));
+//        $picture=new Picture();
+//        $picture->name = $request->name;
+//        $picture->reference=$request->reference;
+//        $picture->napping_story= $request->napping_story;
+//        $picture->save();
+//        return redirect()->route('pictures.show', $picture->id);
+//    }
+    /**
+     * @return mixed
+     */
+    public function  index(){
+        $posts =Post::orderBy('id','desc')-> paginate(10);
+        return view('story.index')->withPosts($posts);
+    }
+
+    public function  getIndex(){
+        $posts =Post::orderBy('title','desc')-> limit(4)->get();
+        return view('story.index')->withPosts($posts);
     }
 
     /**
@@ -47,35 +68,20 @@ class PostController extends Controller
             'title' => 'required',
             'message' => 'required'
         ));
-
         //store in database
         $post=new Post;
         $post->title = $request->title;
         $post->message = $request->message;
-
         $post->save();
         //Session::flash('success','Post was succesfully saved');
         return redirect()->route('story.show', $post->id);
-
     }
-
-
     /**
      * @return mixed
      */
     public function create(){
         return view('story.create');
     }
-
-    /**
-     * @return mixed
-     */
-    public function createpicture()
-    {
-        return view('pages.create');
-    }
-
-
     /**
      * @param $id
      * @return mixed
@@ -132,7 +138,5 @@ class PostController extends Controller
             return redirect()->route('story.index');
         }
         return back();
-
-
     }
 }

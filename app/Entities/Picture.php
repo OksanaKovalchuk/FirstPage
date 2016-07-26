@@ -10,6 +10,8 @@ class Picture extends Model
 
     public function painter()
     {
-        return $this->belongsToMany(Painter::class, 'pictures_painters', 'picture_id', 'painter_id');
+        return $this->belongsToMany(Painter::class, 'pictures_painters', 'picture_id', 'painter_id')
+                ->orderBy('painter_id')
+                ;
     }
 }

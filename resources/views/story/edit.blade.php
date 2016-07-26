@@ -53,7 +53,6 @@
                         <div class="col-sm-6">
                             {!! Html::linkRoute('story.show','Cancel', array($post->id), array('class'=>
                             'btn btn-danger btn-block')) !!}
-
                         </div>
                         <div class="col-sm-6">
                             {{ Form::submit('Save Changes',['class'=> 'btn btn-success btn-block']) }}

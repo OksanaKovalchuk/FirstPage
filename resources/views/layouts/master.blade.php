@@ -15,6 +15,10 @@
 
 <body>
 <div id="main">
+    <select>
+        <option value="ua">ua</option>
+        <option value="en">en</option>
+    </select>
     <header>
         <div id="banner">
             <div id="welcome">
@@ -27,8 +31,9 @@
         <div id="menubar">
             <ul id="nav">
                 {{--<li class="current"><a href="{{'name.main'}}">Головна</a></li>--}}
-                <li><a href="{{ route('name.main') }}">головна</a></li>
+                <li><a href="{{ route('name.main') }}">Головна</a></li>
                 <li><a href="{{ route('story.index') }}">Історії</a></li>
+                <li><a href="{{ route('stories') }}">Картини</a></li>
                 <li><a href="{{ route('name.painters')}}">Про художників</a></li>
                 <li><a href="{{ route('contactform')}}">Зворотній зв'язок</a></li>
             </ul>
