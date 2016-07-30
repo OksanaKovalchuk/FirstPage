@@ -35,7 +35,11 @@ class Kernel extends HttpKernel
         'api' => [
             'throttle:60,1',
         ],
+<<<<<<< HEAD
 	'admin' => [
+=======
+        'admin' => [
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
             AdminMiddleware::class
         ]
     ];
@@ -53,7 +57,11 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+<<<<<<< HEAD
         'cors' => \Barryvdh\Cors\HandleCors::class,
+=======
+        'rbac' => '\PHPZen\LaravelRbac\Middleware\Rbac::class',
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
 
     ];
 }

@@ -23,9 +23,15 @@ class PictureRepository
         return $this->model->find($id, $columns);
     }
 
+<<<<<<< HEAD
     public function update($id,array $attributes = [])
     {
         return $this->model->find($id)->update($attributes);
+=======
+    public function update(array $attributes = [])
+    {
+        return $this->model->update($attributes);
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
 
     }
 

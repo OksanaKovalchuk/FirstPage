@@ -1,15 +1,25 @@
 <?php
+<<<<<<< HEAD
     return [
         'menu' => 'Меню',
         'Name of this picture:'  => 'Назва картини:',
         'URL of your picture:' => 'URL-адреса картини:',
         'Nappingstory' => 'Історія викрадення (необов\'язково):',
         'Addonemorepicture' => 'Додати картину',
+=======
+return [
+        'menu' => 'Меню',
+        'Name of this picture:'  => 'Назва картини:',
+        'URL of your picture:' => 'URL-адреса картини:',
+        'Napping story' => 'NІсторія викрадення',
+        'Add one more picture' => 'Додати картину',
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
         'Date of update:' => 'Дата оновлення:',
         'Date of creation:' => 'Дата створення:',
         'Edit' => 'Редагувати',
         'Delete' => 'Видалити',
         'View' => 'Переглянути',
+<<<<<<< HEAD
         'painterstitle' => 'Видатні художники',
         'picture' => 'Картина',
         'picturename' => 'Назва картини',
@@ -46,5 +56,7 @@
         'monthcr' => 'Липень ',
         'phonenumber' => 'Номер телефону: ',
         'contacts' => 'Контактні дані: ',
+=======
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
 ];
 ?>

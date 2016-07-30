@@ -26,7 +26,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'debug' => env('APP_DEBUG', true),
+=======
+    'debug' => env('APP_DEBUG', false),
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +82,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'fallback_locale' => 'ua',
+=======
+    'fallback_locale' => 'en',
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
 
     /*
     |--------------------------------------------------------------------------
@@ -122,8 +130,13 @@ return [
     */
 
     'providers' => [
+<<<<<<< HEAD
      //   Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
       //  Prettus\Repository\Providers\RepositoryServiceProvider::class,
+=======
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
         /*
          * Laravel Framework Service Providers...
          */
@@ -156,6 +169,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+<<<<<<< HEAD
         Barryvdh\Cors\ServiceProvider::class,
         /**
          * Third Party Service Providers...
@@ -163,6 +177,14 @@ return [
        // DCN\RBAC\RBACServiceProvider::class,
      //   Askedio\Laravel5RBAC\Providers\GenericServiceProvider::class,
      //   PHPZen\LaravelRbac\RbacServiceProvider::class,
+=======
+        /**
+         * Third Party Service Providers...
+         */
+        DCN\RBAC\RBACServiceProvider::class,
+        Askedio\Laravel5RBAC\Providers\GenericServiceProvider::class,
+        PHPZen\LaravelRbac\RbacServiceProvider::class,
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
     ],
     'generator'=>[
         'basePath'=>app_path(),

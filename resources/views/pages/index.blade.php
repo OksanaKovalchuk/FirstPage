@@ -3,7 +3,11 @@
 @section('content')
     <div class="row">
         <div class="col-md-10">
+<<<<<<< HEAD
             <h1><font color="#faebd7"> {{trans('lang.AllPosts')}}</font></h1>
+=======
+            <h1><font color="#faebd7">  All Posts</font></h1>
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
         </div>
 
         <div class="col-md-2">

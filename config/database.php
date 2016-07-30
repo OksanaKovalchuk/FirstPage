@@ -57,8 +57,13 @@ return [
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'forge'),
+<<<<<<< HEAD
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
+=======
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', '1'),
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
@@ -82,7 +87,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
     | Migration Repository Table
+=======
+    | Migration Repositories Table
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
     |--------------------------------------------------------------------------
     |
     | This table keeps track of all the migrations that have already run for

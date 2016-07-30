@@ -29,7 +29,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'lifetime' => 120,
+=======
+    'lifetime' => 120,//minutes - time of session- 30?
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
 
     'expire_on_close' => false,
 

@@ -109,4 +109,8 @@ return [
 
     'sendmail' => '/usr/sbin/sendmail -bs',
 
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3

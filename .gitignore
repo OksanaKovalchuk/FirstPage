@@ -4,4 +4,9 @@
 Homestead.yaml
 Homestead.json
 .env
+<<<<<<< HEAD
 .idea
+=======
+.idea
+_ide_helper.php
+>>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
