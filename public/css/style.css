@@ -5,11 +5,8 @@
 /*} */
 
 html
-<<<<<<< HEAD
 { height: auto;}
-=======
-{ height: 100%;}
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
+
 
 *
 { margin: 0;
@@ -22,11 +19,8 @@ body
 }
 
 /* tell the browser to render HTML 5 elements as block */
-<<<<<<< HEAD
+
 article, aside, figure, footer, header, nav, section {
-=======
-article, aside, figure, footer, header, hgroup, nav, section {
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
   display:block;
 }
 .form-group
@@ -120,11 +114,7 @@ header
  
 nav
 { width: 940px;
-<<<<<<< HEAD
   height: 100px;}
-=======
-  height: 50px;}  
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
   
 #menubar
 { width: 940px;
@@ -142,11 +132,7 @@ nav
 #welcome
 { width: 880px;
   float: left;
-<<<<<<< HEAD
-  height: 50px;
-=======
   height: 60px;
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
   margin: 0 auto;
   text-align: center;
   padding: 0 0 10px 20px;

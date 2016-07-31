@@ -53,8 +53,6 @@ class AuthController extends Controller
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
         ]);
-<<<<<<< HEAD
-=======
         $adminRole = new Role;
         $adminRole->name = 'Administrator';
         $adminRole->slug = 'administrator';
@@ -66,7 +64,6 @@ class AuthController extends Controller
         $editorRole->slug = 'editor';
         $editorRole->description = 'Editor';
         $editorRole->save();
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
     }
 
     /**

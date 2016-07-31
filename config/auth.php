@@ -67,12 +67,8 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-<<<<<<< HEAD
             'model' => App\User::class,
 //            'model' => Askedio\Laravel5RBAC\User::class,
-=======
-            'model' => Askedio\Laravel5RBAC\User::class,
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
         ],
 
         // 'users' => [

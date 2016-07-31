@@ -23,13 +23,7 @@ class Kernel extends ConsoleKernel
      * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
      * @return void
      */
- protected function schedule(Schedule $schedule)
-=======
-     * @param Schedule $schedule
-     */
-    protected function schedule(Schedule $schedule)
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
-    {
+ protected function schedule(Schedule $schedule){
         // $schedule->command('inspire')
         //          ->hourly();
 //        $schedule->command('emails:send --force')

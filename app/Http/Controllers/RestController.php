@@ -19,7 +19,6 @@ class RestController extends Controller
     public function index(PictureRepository $pictures)
     {
         $pict = $pictures->getAll();
-       // $paint = $painters->getAll();
         return response()->json($pict);
 
     }

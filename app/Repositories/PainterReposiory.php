@@ -22,22 +22,14 @@ class PainterReposiory
     }
     public function find($id, $columns = ['*'])
     {
-<<<<<<< HEAD
         Cache::remember('find_'.$id.'_'.implode('_',$columns), 15, function() use ($id,$columns){
             return $this->model->find($id, $columns);
-=======
-        Cache::remember('find', 15, function() use ($id,$columns){
-            return $this->model->find($id, $columns);;
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
         });
 
     }
     public function update(array $attributes = [])
     {
-<<<<<<< HEAD
-=======
         Cache::forget('create');
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
             return $this->model->update($attributes);
 
     }
@@ -51,13 +43,9 @@ class PainterReposiory
 
     public function create(array $attributes = [])
     {
-<<<<<<< HEAD
-            return $this->model->create($attributes);
-=======
         Cache::remember('create', 15, function() use ($attributes){
             return $this->model->create($attributes);
         });
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
     }
 
     public function delete($id)

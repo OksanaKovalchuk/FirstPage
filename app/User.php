@@ -3,13 +3,10 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-<<<<<<< HEAD
 //use DCN\RBAC\Traits\HasRoleAndPermission;
 //use DCN\RBAC\Contracts\HasRoleAndPermission as HasRoleAndPermissionContract;
-=======
 use DCN\RBAC\Traits\HasRoleAndPermission;
 use DCN\RBAC\Contracts\HasRoleAndPermission as HasRoleAndPermissionContract;
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
 
 /**
  * App\User
@@ -32,20 +29,13 @@ use DCN\RBAC\Contracts\HasRoleAndPermission as HasRoleAndPermissionContract;
  */
 class User extends Authenticatable
 {
-<<<<<<< HEAD
-=======
 
-    
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-<<<<<<< HEAD
-=======
-    
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
+
     protected $fillable = [
         'name', 'email', 'password',
     ];

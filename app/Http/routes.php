@@ -10,17 +10,13 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-<<<<<<< HEAD
 //Route::group(['middleware' => 'locale'], function(){}
-=======
 
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('painters','MainController@painters')->name('name.painters');
-<<<<<<< HEAD
 Route::get('painters/{painter}','MainController@paintersSingle')->name('painters.single');
 Route::auth();
 Route::get('/home', 'HomeController@index');
@@ -33,7 +29,7 @@ Route::get('main','MainController@index')->name('name.main');
 Route::get('pictures','MainController@stories')->name('stories');
 
 //pictures and actions with them
-=======
+
 Route::get('painters/{painterId}','MainController@paintersSingle')->name('name.painters.single');
 Route::auth();
 Route::get('/home', 'HomeController@index');
@@ -41,8 +37,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('main','MainController@index')->name('name.main');
 Route::get('pictures','MainController@stories')->name('stories');
 
-//pictures and actions with them 
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
+//pictures and actions with them
 Route::get('pictures/create','MainController@pictureCreate')->name('picture.create');
 Route::get('pictures/{picture}','MainController@pictureShow')->name('pictures.show');
 Route::post('pictures/{picture}/update','MainController@pictureUpdate')->name('picture.update');
@@ -86,11 +81,9 @@ Route::get('dashboard', [
     'uses' => 'HomeController@index',
 ]);
 
-<<<<<<< HEAD
 //Route::get('')
 
 Route::resource('products-list', 'RestController');
 Route::resource('picture-list', 'PictureController');
-=======
+
 //Route::get('')
->>>>>>> 038177dd1036d09609ad31b2b35133ed6711cea3
